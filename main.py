@@ -18,7 +18,7 @@ if __name__ == "__main__":
             host=settings.app_host,
             port=settings.app_port,
             reload=True,
-            debug=True,
+            log_level="debug"  # 使用这个替代 debug=True
         )
     else:
         uvicorn.run(
